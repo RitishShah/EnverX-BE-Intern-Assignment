@@ -8,6 +8,9 @@ app.use(fileUpload());
 
 // Import Routes
 const blog = require("./routes/blogRoutes");
+const user = require("./routes/userRoutes");
+
 app.use('/api', blog);
+app.use('/api', user);
 
 module.exports = app;

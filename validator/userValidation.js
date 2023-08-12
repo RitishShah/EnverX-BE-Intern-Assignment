@@ -1,6 +1,5 @@
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-const ObjectId = mongoose.Types.ObjectId;
 const {validateEmail, validatePassword} = require('../utils/helper');
 const utils = require('../utils/response');
 
