@@ -53,6 +53,7 @@ The estimated time to complete this assignment is 1 day, but it may vary based o
 1. This application consist of managing blog with CRUD functionality.
 2. It allows us to use Create Blog, Get All Blog, Get Single Blog, Delete Blog, Update Blog. 
 3. It consist of User Authentication also. Such as Signup, Signin, SignOut.
+4. It uses Cloudinary Platform for storing images on Cloud.
 
 ## API EndPoints
 1. POST - signup
