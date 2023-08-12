@@ -1,8 +1,8 @@
 const express = require('express');
+const router = express.Router();
 const { createBlogValidation, getAllBlogsValidation, getSingleBlogValidation, deleteSingleBlogValidation, 
 updateSingleBlogValidation } = require('../validator/blogValidation');
 const { createBlog, getAllBlogs, getSingleBlog, deleteSingleBlog, updateSingleBlog } = require('../controller/blogController');
-const router = express.Router();
 
 router.get('/posts', getAllBlogsValidation, getAllBlogs); // Get All Blogs.
 router.get('/posts/:id', getSingleBlogValidation, getSingleBlog); // Get Single Blog associated with id.

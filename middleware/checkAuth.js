@@ -7,20 +7,20 @@ dotenv.config({
     path:"/config/.env"
 });
 
-module.exports = async (request, response, next) => {
+module.exports = async (req, res, next) => {
     try {
-        const token = request.cookies.jwt;
+        const token = req.cookies.jwt;
         console.log(token);
         const decode = jwt.verify(token, process.env.JWT_KEY);
         const user = await User.findOne({_id: decode.userid},"-__v -password");
         if(!user){
-            return utils.response(response, 'fail', 'Invalid User Token', null, 401)
+            return utils.response(res, 'fail', 'Invalid User Token', null, 401)
         }
         
-        request.userData = decode;
-        request.user = user;
+        req.userData = decode;
+        req.user = user;
         next();
     }catch(error){
-        utils.response(response, 'fail', 'Fail to Auth', null, 401)
+        utils.response(res, 'fail', 'Fail to Auth', null, 401)
     }
 }
