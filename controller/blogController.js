@@ -35,6 +35,7 @@ exports.createBlog = async (req, res) => {
         }
 
         console.log("Whole Object", req.body);
+        req.body.author = req.user.name;
         const blog = await Blog.create(req.body);
         utils.response(res, 'success', "Blog Created Successfully", blog, 201);
     } catch (error) {

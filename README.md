@@ -47,3 +47,19 @@ The estimated time to complete this assignment is 1 day, but it may vary based o
 2. Please complete the assignment and submit it to us by the submission deadline assigned to you. 
 3. follow the instructions carefully, as we will evaluate your code, documentation, and adherence to best practices. Once you have finished, please send us the GitHub repository link.
 4. If you have any questions or need further clarification, please don't hesitate to reach out to us at hr@enverx.com. We look forward to reviewing your work and discussing it with you in the next stage of the interview process.
+
+
+## Blog Application
+1. This application consist of managing blog with CRUD functionality.
+2. It allows us to use Create Blog, Get All Blog, Get Single Blog, Delete Blog, Update Blog. 
+3. It consist of User Authentication also. Such as Signup, Signin, SignOut.
+
+## API EndPoints
+1. POST - signup
+2. POST - signin
+3. GET - signout
+4. GET - blogs
+5. GET - blogs/:id
+6. POST - blogs
+7. PUT - blogs/:id
+8. DELETE - blogs/:id

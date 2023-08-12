@@ -9,6 +9,10 @@ const blogSchema = new mongoose.Schema({
         type: String,
     },
 
+    author: {
+        type: String
+    },
+
     images: [
         {
             public_id: {
